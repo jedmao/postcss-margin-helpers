@@ -26,9 +26,9 @@ var margin = require('postcss-margin-helpers');
 
 var rule = postcss.parse([
 	'a {',
-	'  margin-top: 0;
-	'  margin: 5px 10px 20px;
-	'  margin-bottom: 40px;
+	'  margin-top: 0;',
+	'  margin: 5px 10px 20px;',
+	'  margin-bottom: 40px;',
 	'}'
 ].join('')).first;
 
