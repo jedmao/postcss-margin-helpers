@@ -9,6 +9,17 @@ tape('postcss-margin-helpers', function(t) {
 		'margin: 0 1 2 3'
 	]);
 
+	t.deepEqual(
+		margin(rule),
+		{
+			top: '0',
+			right: '1',
+			bottom: '2',
+			left: '3'
+		},
+		'resolves all props into an object'
+	);
+
 	t.equal(
 		margin.top(rule),
 		'0',
@@ -40,6 +51,17 @@ tape('postcss-margin-helpers', function(t) {
 		'margin-bottom: 6',
 		'margin-left: 7'
 	]);
+
+	t.deepEqual(
+		margin(rule),
+		{
+			top: '4',
+			right: '5',
+			bottom: '6',
+			left: '7'
+		},
+		'accumulates all resolved props into an object'
+	);
 
 	t.equal(
 		margin.top(rule),
