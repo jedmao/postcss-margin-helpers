@@ -10,7 +10,7 @@
 
 [![npm](https://nodei.co/npm/postcss-margin-helpers.svg?downloads=true)](https://nodei.co/npm/postcss-margin-helpers/)
 
-Font helpers for [PostCSS](https://github.com/postcss/postcss).
+Margin helpers for [PostCSS](https://github.com/postcss/postcss).
 
 ## Installation
 
